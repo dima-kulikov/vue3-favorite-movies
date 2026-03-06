@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from "vue-router";
+import { createRouter, createWebHashHistory } from "vue-router";
 import MoviesPage from "../pages/MoviesPage.vue";
 import TVPage from "../pages/TVPage.vue";
 import AnimatedPage from "../pages/AnimatedPage.vue";
@@ -16,7 +16,7 @@ const routes = [
 ];
 
 export const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHashHistory(),
   routes,
 });
 
